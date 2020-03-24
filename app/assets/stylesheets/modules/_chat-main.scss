@@ -1,0 +1,133 @@
+$btn_color: #38aef0;
+
+.chat-main{
+  width: calc(100vw - 300px);
+  &__group-info{
+    height: 100px;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    &__left{
+      margin-top: 35px;
+      margin-left: 40px;
+    
+      .group-name{
+        font-size: 20px;
+        color: #333333;
+        margin-bottom: 15px;
+      }
+      .group-member{
+        display: flex;
+        color: #999999;
+        font-size: 12px;
+      }
+
+    }
+    &__edit-btn{
+      height: 40px;
+      line-height: 40px;
+      border: solid 1px $btn_color;
+      margin-top: 28px;
+      padding: 0 20px;
+      margin-right: 40px;
+      .EDITlink{
+        text-decoration: none;
+        color: $btn_color;
+      }
+    }
+  }
+
+  &__message-list{
+    height: calc(100% - 190px);
+    background-color: #fafafa;
+    padding: 35px 40px;
+    &__box{
+      margin-bottom: 35px;
+      &__info{
+        display: flex;
+        .username{
+          color: #333333;
+          font-size: 16px;
+        }
+        .time{
+          margin-left: 10px;
+          font-size: 12px;
+          color: #999999;
+        }
+      }
+      .text{
+        margin-top: 12px;
+        font-size: 14px;
+        color: #434a54;
+      }
+    }
+    &__box-second{
+      margin-bottom: 35px;
+      &__info{
+        display: flex;
+        .username-second{
+          color: #333333;
+          font-size: 16px;
+        }
+        .time-second{
+          margin-left: 10px;
+          font-size: 12px;
+          color: #999999;
+        }
+      }
+      .text-second{
+        margin-top: 12px;
+        font-size: 14px;
+        color: #434a54;
+      }
+    }
+
+
+  }
+
+  &__message-form{
+    height: 90px;
+    padding: 10px 50px;
+    background-color: #d2d2d2;
+
+    form{
+      display: flex;
+
+      .input-box{
+        display: flex;
+        position: relative;
+        width: 100%;
+
+        &__text{
+          height: 50px;
+          padding: 0 40px 0 10px;
+          width: 100%;
+        }
+
+        &__image{
+          position: absolute;
+          right: 10px;
+          font-size: 1.3rem;
+          margin-top: 10px;
+           &__file{
+             display: none;
+             position: absolute;
+           }
+        }
+      }
+      .submit-btn{
+        height: 50px;
+        padding: 0 30px;
+        // width: 100%;
+        margin-left: 15px;
+        background-color:$btn_color ;
+        color: white;
+
+      }
+    }
+  }
+
+}
+
+
+  
