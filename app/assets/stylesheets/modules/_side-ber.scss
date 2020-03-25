@@ -1,0 +1,58 @@
+$text_color: #ffffff;
+
+.side-ber{
+  width: 300px;
+  color: $text_color;
+  font-weight: bold;
+
+  &__user-name{
+    height: 100px;
+    background-color:#253141 ;
+    display: flex;
+    align-items: center;
+    position: relative;
+
+    &__top-items__name{
+      height: 20px;
+      padding-right: 60px;
+      background-color: #253141;
+      width: calc(100% - 40px);
+      margin: 0 auto;
+      font-size: 16px;
+    }
+
+    &__top-items__icons{
+      display: block;
+      position: absolute;
+      height: 20px;
+      right: 20px;
+      display: flex;
+      list-style: none;
+      text-decoration: none;
+      justify-content: space-between;
+      color: black;
+      &--make-group{
+        color:$text_color;
+      }
+      &--setting-change{
+        margin-left: 5px;
+        color:$text_color;
+      }
+    }
+  }
+  &__group-list{
+    height: calc(100% - 100px);
+    background-color:#2f3e51 ;
+  }
+}
+.name{
+  height: 65px;
+  &__group-name{
+    font-size: 16px;
+    padding: 20px 20px 5px 20px ;
+  }
+  &__latest-message{
+    font-size: 11px;
+    padding: 0px 20px ;
+  }
+}
