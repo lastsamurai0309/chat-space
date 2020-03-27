@@ -28,7 +28,7 @@ $text_color: #ffffff;
       right: 20px;
       display: flex;
       list-style: none;
-      text-decoration: none;
+      // text-decoration: none;
       justify-content: space-between;
       color: black;
       &--make-group{
@@ -38,6 +38,7 @@ $text_color: #ffffff;
         margin-left: 5px;
         color:$text_color;
       }
+     
     }
   }
   &__group-list{
