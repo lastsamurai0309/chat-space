@@ -38,6 +38,7 @@ $text_color: #ffffff;
         margin-left: 5px;
         color:$text_color;
       }
+      
      
     }
   }
@@ -46,14 +47,23 @@ $text_color: #ffffff;
     background-color:#2f3e51 ;
   }
 }
+
 .name{
   height: 65px;
+  
   &__group-name{
     font-size: 16px;
     padding: 20px 20px 5px 20px ;
+    color: #ffffff;
   }
   &__latest-message{
     font-size: 11px;
     padding: 0px 20px ;
+    color: #ffffff;
+
   }
+  .EDITlink{
+    text-decoration: none;
+  }
+
 }

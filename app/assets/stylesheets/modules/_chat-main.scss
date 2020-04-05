@@ -111,19 +111,19 @@ $btn_color: #38aef0;
           margin-top: 10px;
            &__file{
              display: none;
-             position: absolute;
            }
         }
       }
       .submit-btn{
         height: 50px;
         padding: 0 30px;
-        // width: 100%;
+        width: 100px;
         margin-left: 15px;
         background-color:$btn_color ;
         color: white;
 
       }
+
     }
   }
 
