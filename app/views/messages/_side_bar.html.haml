@@ -12,8 +12,8 @@
   .side-ber__group-list
     - current_user.groups.each do |group|
       .name
-        = link_to '#' do
+        = link_to group_messages_path(group),class: "EDITlink" do
           %p.name__group-name
             = group.name
           %p.name__latest-message
-            まだメッセージはありません
+            = group.show_last_message

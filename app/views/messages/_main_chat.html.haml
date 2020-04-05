@@ -2,13 +2,15 @@
   .chat-main__group-info
     .chat-main__group-info__left
       %h2.group-name
-        test
+        = @group.name
       %ul.group-member
         Member:
         %li.name-first
-          masa
+          - @group.users.each do |user|
+            = user.name
+          
     .chat-main__group-info__edit-btn
-      = link_to "edit","#",class: "EDITlink"
+      = link_to "edit", edit_group_path(@group.id), class: "EDITlink"
 
   .chat-main__message-list
     .chat-main__message-list__box
@@ -30,11 +32,13 @@
         今日は夜から雨
 
   .chat-main__message-form
-    %form.new_message
+    = form_for [@group, @message], html: {class: 'new_message'}  do |f|
+      .messages
+        = render @messages
+      
       .input-box
-        %input{type: "text",class: "input-box__text",placeholder: "type a message"}
-        %label{class: "input-box__image"}
-          =icon("fas","image")
-          %input{type: "file", class: "input-box__image__file"}
-      %input{type: "submit",class: "submit-btn"}
-
+        = f.text_field :content, class: 'input-box__text',placeholder: 'type a message'
+        = f.label :image, class: 'input-box__image' do
+          = icon('fas', 'image')
+          = f.file_field :image, class: 'input-box__image__file'
+      = f.submit 'Send', class: 'submit-btn'
