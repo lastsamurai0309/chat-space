@@ -4,6 +4,7 @@ $text_color: #ffffff;
   width: 300px;
   color: $text_color;
   font-weight: bold;
+  overflow: scroll;
 
   &__user-name{
     height: 100px;
