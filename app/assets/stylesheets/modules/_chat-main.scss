@@ -72,7 +72,8 @@ $btn_color: #38aef0;
     display: flex;
     .new_message{
       display: flex;
-      width: 100%;
+      width: 100vw;
+      padding: 10px 0;
       &__message{
         height: 50px;
         padding: 0 40px 0 10px;
